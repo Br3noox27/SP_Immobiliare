@@ -1,29 +1,45 @@
 🏠 Immobiliare SP — Machine Learning para Previsão de Preço de Imóveis
-Descrição do Projeto
-Este projeto foi desenvolvido para atender a uma dor real de uma imobiliária:
-Eliminar a necessidade de deduções manuais sobre o preço dos imóveis.
+📋 Contexto e Solicitação do Cliente
+Cliente: Imobiliária localizada no Distrito de São Paulo.
+Necessidade: Automatizar a avaliação de preços dos imóveis disponíveis para aluguel, reduzindo erros humanos, aumentando a agilidade comercial e padronizando o processo de precificação.
 
-O objetivo principal é utilizar técnicas de Machine Learning para:
+Solicitação Formal:
+"Precisamos de uma solução que, a partir dos dados dos imóveis (metragem, suítes, localização, etc.), consiga sugerir automaticamente o preço real de mercado. Além disso, queremos visualizar no mapa todos os imóveis disponíveis, de forma que as bolhas mudem de cor de acordo com o valor."
 
-Analisar os imóveis de aluguel no distrito de São Paulo.
+🔥 Dor do Cliente
+Lentidão: Avaliações manuais tomam até 3 dias por lote de imóveis.
 
-Mapear a localização dos imóveis com informações detalhadas.
+Inconsistência: Preços deduzidos variam até 30% entre avaliadores diferentes.
 
-Prever automaticamente o valor real de cada imóvel com base em seus atributos.
+Custo: Erros de avaliação geram prejuízo de até 15% em alguns contratos.
 
-Além disso, foi criado um mapa interativo para visualizar as localizações dos imóveis no Distrito de SP, com:
+Competitividade: Necessidade de ter avaliações rápidas para ganhar novos contratos em um mercado altamente competitivo.
 
-Cores diferentes de acordo com o valor do imóvel.
+🕑 Tempo de Desenvolvimento
+Planejamento e Análise: 1 dia
 
-Tamanhos de bolhas de acordo com o tamanho do imóvel.
+Coleta e Preparação dos Dados: 2 dias
 
-📍 Problema a ser Resolvido
-Dificuldade: Corretores precisam fazer deduções manuais do preço dos imóveis.
+Modelagem e Desenvolvimento de Mapas: 2 dias
 
-Solução: Automatizar a previsão de preços baseada em características reais, como metragem, localização (latitude/longitude), número de suítes, etc.
+Validação e Ajustes Finais: 1 dia
 
-Impacto: Reduzir o tempo de avaliação, padronizar os preços e aumentar a eficiência comercial da imobiliária.
+⏳ Tempo Total Estimado: 6 dias úteis
 
+💵 Valor Estimado do Projeto
+
+Item	Estimativa de Custo
+Análise de Negócio e Planejamento	R$ 1.200
+Desenvolvimento da Solução de Machine Learning	R$ 3.000
+Criação e Integração do Mapa Interativo	R$ 2.000
+Testes, Ajustes e Documentação	R$ 800
+🔹 Valor Total:	R$ 7.000,00
+📊 Divisão do Projeto
+
+Atividade	Porcentagem (%)
+Pesquisa e Levantamento de Dados	30%
+Desenvolvimento e Tratamento de Dados	50%
+Aplicação de Testes e Validação (TDD)	20%
 🛠️ Técnicas Utilizadas
 Python
 
@@ -39,31 +55,59 @@ One Hot Encoding — Preparação de variáveis categóricas para Machine Learni
 
 Análise Exploratória de Dados — Entendimento do comportamento dos preços
 
-🗺️ Mapa Interativo
-O projeto gera um mapa com:
-
-Localização de cada imóvel
-
-Preço representado por cores (do mais barato ao mais caro)
-
-Tamanho da bolha proporcional ao tamanho do imóvel
-
 📈 Pipeline de Desenvolvimento
-Importação dos dados — Base de imóveis de São Paulo.
+Importação dos dados: Base de imóveis de São Paulo.
 
-Filtragem — Apenas imóveis para aluguel.
+Filtragem: Apenas imóveis para aluguel.
 
-Tratamento dos dados — Remoção de colunas desnecessárias e tratamento de valores faltantes.
+Tratamento dos dados: Remoção de colunas desnecessárias e tratamento de valores faltantes.
 
-Análise Exploratória — Histograma e estatísticas dos preços e atributos.
+Análise Exploratória: Histograma e estatísticas dos preços e atributos.
 
-Mapeamento Geográfico — Mapa de São Paulo colorido por faixa de preço.
+Mapeamento Geográfico: Mapa de São Paulo colorido por faixa de preço.
 
-Preparação para Machine Learning — Aplicação de One Hot Encoding e limpeza final.
+Preparação para Machine Learning: Aplicação de One Hot Encoding e limpeza final.
 
 🚀 Resultados
 ✅ Criação de um sistema automatizado para sugerir preços de imóveis.
-✅ Visualização prática e intuitiva dos imóveis por preço e localização.
-✅ Pronto para integração com algoritmos de Machine Learning para futuras previsões de preço ainda mais precisas.
 
-![Captura de tela_20230219_215942](https://user-images.githubusercontent.com/112839260/219987045-84cc8ec0-ac79-46a2-8426-96042cf052ae.png)
+✅ Visualização prática e intuitiva dos imóveis por preço e localização.
+
+✅ Redução significativa do tempo de avaliação manual (de dias para minutos).
+
+✅ Padronização dos preços e aumento de competitividade no mercado.
+
+
+💬 Contato
+Caso tenha interesse ou sugestões, entre em contato:
+
+LinkedIn: seu_linkedin
+
+Email: seuemail@exemplo.com
+
+🚀 Este projeto resolve uma necessidade real de mercado e demonstra como a ciência de dados pode transformar decisões imobiliárias!
+
+📊 Fontes de Dados Reais
+Aqui estão algumas fontes de dados públicas que você pode utilizar para treinar e validar o modelo de previsão de preços de imóveis:
+
+Inside Airbnb
+Dados públicos sobre aluguéis no Airbnb, como preços, localização, e características dos imóveis. Pode ser usado para comparar preços e construir um modelo de precificação para imóveis de aluguel de curto prazo.
+Link: Inside Airbnb
+
+IBGE (Instituto Brasileiro de Geografia e Estatística)
+O IBGE oferece uma vasta gama de dados sobre a demografia e as características econômicas das diferentes regiões do Brasil, que podem ser usadas para enriquecer o modelo com informações sobre o mercado local e as tendências econômicas.
+Link: IBGE
+
+Dados Abertos de São Paulo (SMADS)
+A Prefeitura de São Paulo oferece dados sobre imóveis, imóveis públicos, infraestrutura e mais, que podem ser úteis para análises imobiliárias.
+Link: Dados Abertos SP
+
+DataZap+
+Uma plataforma de dados de mercado imobiliário que oferece informações sobre preços de imóveis em diversas regiões do Brasil.
+Link: DataZap+
+
+Projeções de Mercado Imobiliário (FGV)
+A Fundação Getulio Vargas oferece dados e índices relacionados ao mercado imobiliário brasileiro, que podem ser úteis para modelar variações de preço e tendências do setor.
+Link: FGV - Mercado Imobiliário
+
+Esse conjunto de fontes de dados reais pode enriquecer seu projeto e fornecer informações valiosas para aprimorar a precisão do modelo de previsão de preços de imóveis. Se precisar de mais alguma coisa ou ajustes, é só avisar! 🚀
