@@ -24,16 +24,6 @@ _"Precisamos de uma solução que, a partir dos dados dos imóveis (metragem, su
 
 **⏳ Tempo Total Estimado:** 6 dias úteis
 
-## 💵 Valor Estimado do Projeto
-
-| Item | Estimativa de Custo |
-| --- | --- |
-| Análise de Negócio e Planejamento | R$ 1.200 |
-| Desenvolvimento da Solução de Machine Learning | R$ 3.000 |
-| Criação e Integração do Mapa Interativo | R$ 2.000 |
-| Testes, Ajustes e Documentação | R$ 800 |
-| **🔹 Valor Total:** | **R$ 7.000,00** |
-
 ## 📊 Divisão do Projeto
 
 | Atividade | Porcentagem (%) |
